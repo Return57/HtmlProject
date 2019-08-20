@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    height: 800px;
+    background-image: url(bg.png);
+    background-size: cover;
+
+}
+
+.nav {
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    transition: .5s;
+}
+
+.nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 50px;
+    color: #fff;
+    font-size: 24px;
+    font-family: sans-serif;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.nav ul li:hover {
+    background: #f39c12;
+}
+
+.box {
+    width: 80%;
+    height: 2000px;
+    margin: 20px auto;
+}
