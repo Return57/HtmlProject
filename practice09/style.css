@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.vid {
+    position: absolute;
+    width: 100vw;
+}
+
+.panel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, .8);
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #3498db;
+    border-bottom: #3498db solid 2px;
+    cursor: default;
+}
+
+.input input {
+    outline: none;
+    width: 100%;
+    height: 20px;
+    border: none;
+    background: none;
+    color: #fff;
+    border-bottom: 0.1rem solid #3498db;
+}
+
+.input::after {
+    content: attr(aria-placeholder);
+    position: absolute;
+    left: 0;
+    top: -20%;
+    font-size: 1.1rem;
+    color: rgba(52, 152, 319, 0.44);
+    transition: .3s;
+}
+
+.input.focus::after {
+    top: -70%;
+    font-size: 1rem;
+}
+
+.info {
+    margin-top: 10px;
+    text-align: center;
+    color: #3498db;
+}
+
+.info a {
+    color: #3498db;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+
+form {
+    color: #3498db;
+    width: 12rem;
+}
+
+form .input {
+    position: relative;
+    opacity: 1;
+    width: 100%;
+    margin: 2rem 0 0;
+    height: 42px;
+}
+
+.username {
+    margin: 3rem 0 0;
+}
+
+.password {
+    height: 1.6rem;
+}
+
+form button {
+    display: block;
+    border: none;
+    margin: 2rem 61px 0;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgba(138, 143, 255, 0.75), rgb(200, 174, 255));
+    box-shadow: 0 0 8px #8a8fff;
+    cursor: pointer;
+}
+
+form button:hover {
+    border: none;
+    margin: 2rem -7px 0;
+    width: 100%;
+    height: 3.5rem;
+    border-radius: 3rem;
+    background: linear-gradient(90deg, rgba(138, 143, 255, 0.75), rgba(200, 174, 255, 0.75));
+    box-shadow: 0 0 8px #8a8fff;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.6);
+    transition: .4s;
+}
